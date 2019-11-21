@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+div.hbar{
+	text-align:center;
+}
+div.sidebar{
+    position: absolute;
+    top:12%;
+    background-color: black;
+    color: white;
+    height: 80%;
+    width: 10%;
+}
+
+a.hbar, a:visited{
+    /*position:relative;
+    top:20%;
+    left:5%;*/
+	
+	padding-left:4vw;
+	padding-right:4vw;
+	height:3vh;
+    background-color: transparent;
+    border-color: gray;
+	text-decoration: none;
+    font-family: Verdana;
+    font-size: 2vh;
+	color:black;
+}
+/*
+a:link,a:visited{
+    position: relative;
+    top:5%;
+    left:10%;
+    text-decoration: none;
+    color:white;
+}
+a:link, a:visited {
+	position: absolute;
+	left:37.5%;
+	background-color: black;
+	color: white;
+	border: 0.3em solid white;
+	height: 10%;
+	width: 25%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: Verdana;
+	font-size: 8vh;
+}*/
+a:hover, a:active {
+	color: goldenrod;
+}
+canvas{
+    position:absolute;
+    top:12%;
+    left:11%;
+    height:10%;
+    width:88%;
+}
+#rectangle{
+    width: 50vh;
+    height:2vh;
+    background:white;
+}
+div.circle{
+    width: 10vh;
+    height: 10vh;
+    background: black;
+    border-radius: 50%
+}
+
+
+
+.card {
+  /* Add shadows to create the "card" effect */
+	position: relative;
+	margin:auto;
+	width:85%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	shadow-color:goldenrod;
+	transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(218,165,32,0.5);
+}
+
+/* Add some padding inside the card container */
+.container {
+	padding: 2px 16px;
+	font-family: Verdana;
+}
