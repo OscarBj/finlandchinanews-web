@@ -12,7 +12,41 @@ div.sidebar{
     width: 10%;
 }
 
-a.hbar, a:visited{
+.txtinput{
+	height:3vh;
+	width:35vw;
+}
+
+.hbutton {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 1vh 1vw;
+    text-align: center;
+    font-size: 2vh;
+    margin: 4px 2px;
+    opacity: 0.9;
+    transition: 0.3s;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hbutton:hover{
+	opacity:0.5;
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens 
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+*/
+a.hbar:hover{
+      cursor: pointer;
+}
+a.hbar, a.hbar:visited{
     /*position:relative;
     top:20%;
     left:5%;*/
@@ -27,6 +61,13 @@ a.hbar, a:visited{
     font-size: 2vh;
 	color:black;
 }
+
+a.card, a.hbar:visited{
+	text-decoration: none;
+	color:black;
+}
+
+
 /*
 a:link,a:visited{
     position: relative;
@@ -48,10 +89,9 @@ a:link, a:visited {
 	display: inline-block;
 	font-family: Verdana;
 	font-size: 8vh;
-}*/
-a:hover, a:active {
-	color: goldenrod;
 }
+a:hover, a:active {
+}*/
 canvas{
     position:absolute;
     top:12%;
@@ -73,7 +113,7 @@ div.circle{
 
 
 
-.card {
+div.card {
   /* Add shadows to create the "card" effect */
 	position: relative;
 	margin:auto;
@@ -84,12 +124,33 @@ div.circle{
 }
 
 /* On mouse-over, add a deeper shadow */
-.card:hover {
-	box-shadow: 0 8px 16px 0 rgba(218,165,32,0.5);
+div.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 /* Add some padding inside the card container */
 .container {
 	padding: 2px 16px;
 	font-family: Verdana;
+}
+
+/* Collapse container style */
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.content {
+	width:auto;
+	text-align:center;
+	padding:2vh;
+	max-height: 5vh;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
 }

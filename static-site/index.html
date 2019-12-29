@@ -4,7 +4,12 @@
 <head>
     <meta charset=UTF-8>
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<!--<script src="https://code.jquery.com/jquery-3.4.1.js"></script>-->
 </head>
 
 <body>
@@ -14,20 +19,29 @@
 <hr>
 	
 <!--<div style="display:flex;justify-content:center;width:auto;">-->
-<div style="width:auto;text-align:center;">
+<div id="hbuttons" style="width:auto;text-align:center;">
 	<a href="index.html"  class="hbar">Home</a>
 	<a href="about.html"  class="hbar">About</a>
 	<a href="contact.html"  class="hbar">Contact</a>
-	<a href=""  class="hbar">Search</a>
+	<a class="hbar" data-toggle="collapse" data-target="#demo">Search</a>
 </div>
 
 <hr>
 
+<div id="demo" class="collapse" style="text-align:center;">
+	<input class="txtinput" type="text"></input>
+	<button class="hbutton" >Search</button> 
+</div>
+
+
+<div id="article-container">
+
+<a class="card" href="articles/article3.html">
 <div class="card">
   <div class="container">
     <h4>
 	<img 
-    src="news_icon.svg" 
+    src="resources/news_icon.svg" 
     align="top"
 		alt="newsicon"
     height="24px"
@@ -36,12 +50,14 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
   </div>
 </div>
+</a>
 
+<a class="card" href="articles/article2.html">
 <div class="card">
   <div class="container">
     <h4>
 		<img 
-    src="news_icon.svg" 
+    src="resources/news_icon.svg" 
     align="top"
 		alt="newsicon"
     height="24px"
@@ -50,12 +66,14 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
   </div>
 </div>
+</a>
 
+<a class="card" href="articles/article3.html">
 <div class="card">
   <div class="container">
     <h4>
 		<img 
-    src="news_icon.svg" 
+    src="resources/news_icon.svg" 
     align="top"
 		alt="newsicon"
     height="24px"
@@ -63,11 +81,21 @@
 		<b>Article 3</b></h4>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
   </div>
- </div>
+</div>
+</a>
 
- <hr>
+</div>
+
+<hr>
 
 <h4 style="text-align:center">Finland China News</h4>
+
+
+<script src="scripts/articlehandler.js"></script>
+<!--<script>
+$( "#article-container" ).load( "articles/include.html");
+</script>
+-->
 
 </body>
 </html>
