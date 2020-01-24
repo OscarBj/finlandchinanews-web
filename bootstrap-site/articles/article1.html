@@ -57,12 +57,13 @@
 	
   <hr>
   
-	<div id="searchbox" class="collapse bg-success" style="text-align:center;">
+  <!-- Search Box -->
+  <div id="searchbox" class="collapse bg-success text-center">
 		<div class="py-4">
-			<input type="text" style="width:30vw;"></input>
-			<button type="button" class="btn btn-light" >Search</button> 
+			<input type="text" style="width:50%;"></input>
+			<button type="button" onclick="search()" class="btn btn-dark" >&#x1F50D;</button>
 		</div>
-	</div>
+  </div>
   
   <!-- Page Content -->
   <div class="container">
@@ -118,7 +119,7 @@
       </div>
 
       <!-- Sidebar Widgets Column -->
-      <div class="col-md-4">
+      <div class="col-md-4 d-none d-lg-block">
 
         <!-- Categories Widget -->
         <div class="card my-4">
@@ -182,7 +183,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+  <script src="scripts.js"></script>
 </body>
 
 </html>
